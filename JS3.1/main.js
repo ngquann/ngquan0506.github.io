@@ -77,7 +77,9 @@
 function soNguyenTo(num) {
     if (num <= 1) {
         return false
-    } else if (num > 1) {
+    } else if (num == 2) {
+        return true
+    } else if (num >1){
         for (let i = 2; i <= num; i += 1) {
             if (num % i === 0) {
                 return false
@@ -88,6 +90,7 @@ function soNguyenTo(num) {
     }
 }
 console.log(soNguyenTo(7))
+
 
 // Bài 8: Cho 1 số nguyên dương bất kỳ. Tính tổng tất cả các số nguyên tố mà nhỏ hơn hoặc bằng tham số truyền vào.
 
